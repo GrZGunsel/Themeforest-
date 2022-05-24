@@ -1,0 +1,10 @@
+:root {
+    --bs-primary-color: #005de0;
+    --bs-linear-gradient: linear-gradient(120deg, #54d6eb 0%, #035cdd 100%);
+    --bs-primary-text-color: #333333;
+    --bs-secondary-text-color: #4c4d56;
+    --bs-tertiary-text-color: #717171;
+    --bs-icon-background: #E5EEFC;
+    --bs-primary-white: #ffffff;
+    --bs-banner-button: #252239;
+}
