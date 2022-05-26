@@ -117,3 +117,21 @@
 .btn:hover::after {
     transform: skewX(45deg) scale(1, 1);
 }
+
+.text-primary {
+    color: var(--bs-primary-color);
+}
+
+.blog {
+    padding: 9.0625rem 0;
+}
+
+.blog h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blog h5 {
+    text-align: center;
+    font-size: 2.5rem;
+}
