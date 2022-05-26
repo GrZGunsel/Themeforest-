@@ -125,7 +125,7 @@ nav {
 
 
 .hero-section {
-    height: 90vh;
+    height: 52rem;
     overflow: hidden;
     background-image: url(../images/hero-4-bg.jpg);
 }
@@ -269,13 +269,13 @@ nav {
 }
 
 .about-section .about-wrap .img {
-    position: absolute;
-    z-index: 2;
     border-radius: 0.75rem;
     overflow: hidden;
 }
 
 .about-content .about-wrap .top-right {
+    position: absolute;
+    z-index: 2;
     right: 0;
     height: 10rem;
     width: 10rem;
@@ -283,13 +283,23 @@ nav {
 }
 
 .about-content .about-wrap .middle {
-    top: 45%;
+    position: absolute;
+    z-index: -1 !important;
+    top: 30%;
     right: 35%;
     z-index: 0;
     transform: translate(50%, -50%);
 }
 
+.about-content .about-wrap .top-left {
+    width: 23rem;
+    height: 20rem;
+
+}
+
 .about-content .about-wrap .bottom-right {
+    position: absolute;
+    z-index: 2;
     bottom: -2rem;
     right: 0;
 
@@ -436,6 +446,7 @@ nav {
 
 
 .testimonials .top-header>div {
+    width: 50%;
     flex: 1;
 }
 
@@ -513,9 +524,9 @@ nav {
     font-size: 12px;
 }
 
-.slider {
+/* .slider {
     width: 40rem;
-}
+} */
 
 .slider:hover .slick-prev {
     opacity: 1;
@@ -604,8 +615,8 @@ nav {
 
 .blog .grid-3 {
     margin-top: 5rem;
-    height: 20rem;
-    grid-gap: 3.5rem;
+    height: 25rem;
+    grid-gap: 20px;
 }
 
 .blog .grid-3>div .middle-content {

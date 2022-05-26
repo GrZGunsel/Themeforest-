@@ -1,0 +1,59 @@
+@media all and (max-width:1440px) {
+    .container {
+        width: 1140px;
+
+    }
+
+
+
+}
+
+@media all and (max-width:1200px) {
+    .container {
+        width: 960px;
+
+    }
+
+    .hero-section .leftcontainer h2 {
+        font-size: 55px;
+    }
+
+    .feature-section .feature {
+        padding: 35px 30px;
+    }
+
+    .about-section .rightcontainer {
+        padding: 0;
+    }
+
+
+    .section-content .grid-3 .card .leftcontainer {
+        width: fit-content;
+    }
+
+    .banner-section h2 {
+        font-size: 45px;
+    }
+
+    .testimonials .top-header,
+    .section-content .grid-3 .card {
+        flex-direction: column;
+    }
+
+    .testimonials .top-header .img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .testimonials .top-header>div {
+        width: 100%;
+    }
+
+    .testimonials .top-header .slide .img {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width: 600px) {}
