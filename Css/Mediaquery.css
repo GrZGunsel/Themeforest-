@@ -320,4 +320,13 @@
     .testimonials .rightcontainer p {
         padding: 0;
     }
+
+    .client-slider .slide {
+        margin: 0;
+    }
+
+    body {
+        width: 100vw;
+        overflow: hidden;
+    }
 }
