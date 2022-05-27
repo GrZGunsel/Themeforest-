@@ -18,6 +18,16 @@
 </head>
 
 <body>
+    <div id="progress">
+        <div id="progress-value">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 20V4m-7 7l7-7l7 7" />
+            </svg>
+        </div>
+    </div>
+
     <nav>
         <div class="container">
             <div class="navbar  flex align-items-center">
@@ -370,80 +380,90 @@
             <h5>Trending article & stories</h5>
             <div class="grid-3 ">
                 <div class="grid-content">
-                    <div class="flex flexColumn">
+                    <img src="./images/l-blog-1.jpg" alt="">
+                    <div class="flex flexColumn date">
                         <h3>08</h3>
                         <h6>Aug</h6>
                     </div>
                     <div class="middle-content">
-                        <div class="user flex align-items-center" style="gap:8px">
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
-                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
-                            </svg>
-                            <p>Andrew Parker</p>
+                        <div class="flex align-items-center" style="gap:1rem">
+                            <div class="user flex align-items-center" style="gap:8px">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
+                                </svg>
+                                <p>Andrew Parker</p>
+                            </div>
+                            <div class="comments flex align-items-center" style="gap:8px">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.13em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512">
+                                    <path fill="currentColor"
+                                        d="M532 386.2c27.5-27.1 44-61.1 44-98.2c0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32C93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2c-15.3 30.7-37.3 54.5-37.7 54.9c-6.3 6.7-8.1 16.5-4.4 25c3.6 8.5 12 14 21.2 14c53.5 0 96.7-20.2 125.2-38.8c9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14c3.6-8.5 1.9-18.3-4.4-25c-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4c2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112s-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4l15.5 31.1c2.6 5.1 5.3 10.1 8 14.8c-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1l-19.9 4.6c-16 3.7-32.5 5.6-49 5.6c-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z" />
+                                </svg>
+                                <p>0</p>
+                            </div>
                         </div>
-                        <div class="comments flex align-items-center" style="gap:8px">
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.13em"
-                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512">
-                                <path fill="currentColor"
-                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2c0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32C93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2c-15.3 30.7-37.3 54.5-37.7 54.9c-6.3 6.7-8.1 16.5-4.4 25c3.6 8.5 12 14 21.2 14c53.5 0 96.7-20.2 125.2-38.8c9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14c3.6-8.5 1.9-18.3-4.4-25c-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4c2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112s-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4l15.5 31.1c2.6 5.1 5.3 10.1 8 14.8c-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1l-19.9 4.6c-16 3.7-32.5 5.6-49 5.6c-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z" />
-                            </svg>
-                            <p>0</p>
-                        </div>
+                        <a href="">Who Needs Extract Value From Data?</a>
                     </div>
-                    <h3>Who Needs Extract Value From Data?</h3>
                 </div>
                 <div class="grid-content">
-                    <div class="flex flexColumn">
+                    <img src="./images/l-blog-2.jpg" alt="">
+                    <div class="flex flexColumn date">
                         <h3>08</h3>
                         <h6>Aug</h6>
                     </div>
                     <div class="middle-content">
-                        <div class="user flex align-items-center" style="gap:8px">
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
-                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
-                            </svg>
-                            <p>Andrew Parker</p>
+                        <div class="flex align-items-center" style="gap:1rem">
+                            <div class="user flex align-items-center" style="gap:8px">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
+                                </svg>
+                                <p>Andrew Parker</p>
+                            </div>
+                            <div class="comments flex align-items-center" style="gap:8px">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.13em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512">
+                                    <path fill="currentColor"
+                                        d="M532 386.2c27.5-27.1 44-61.1 44-98.2c0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32C93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2c-15.3 30.7-37.3 54.5-37.7 54.9c-6.3 6.7-8.1 16.5-4.4 25c3.6 8.5 12 14 21.2 14c53.5 0 96.7-20.2 125.2-38.8c9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14c3.6-8.5 1.9-18.3-4.4-25c-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4c2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112s-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4l15.5 31.1c2.6 5.1 5.3 10.1 8 14.8c-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1l-19.9 4.6c-16 3.7-32.5 5.6-49 5.6c-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z" />
+                                </svg>
+                                <p>0</p>
+                            </div>
                         </div>
-                        <div class="comments flex align-items-center" style="gap:8px">
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.13em"
-                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512">
-                                <path fill="currentColor"
-                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2c0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32C93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2c-15.3 30.7-37.3 54.5-37.7 54.9c-6.3 6.7-8.1 16.5-4.4 25c3.6 8.5 12 14 21.2 14c53.5 0 96.7-20.2 125.2-38.8c9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14c3.6-8.5 1.9-18.3-4.4-25c-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4c2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112s-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4l15.5 31.1c2.6 5.1 5.3 10.1 8 14.8c-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1l-19.9 4.6c-16 3.7-32.5 5.6-49 5.6c-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z" />
-                            </svg>
-                            <p>0</p>
-                        </div>
+                        <a href="">Who Needs Extract Value From Data?</a>
                     </div>
-                    <h3>Who Needs Extract Value From Data?</h3>
                 </div>
                 <div class="grid-content">
-                    <div class="flex flexColumn">
+                    <img src="./images/l-blog-3.jpg" alt="">
+                    <div class="flex flexColumn date">
                         <h3>08</h3>
                         <h6>Aug</h6>
                     </div>
                     <div class="middle-content">
-                        <div class="user flex align-items-center" style="gap:8px">
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
-                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
-                            </svg>
-                            <p>Andrew Parker</p>
+                        <div class="flex align-items-center" style="gap:1rem">
+                            <div class="user flex align-items-center" style="gap:8px">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
+                                </svg>
+                                <p>Andrew Parker</p>
+                            </div>
+                            <div class="comments flex align-items-center" style="gap:8px">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.13em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512">
+                                    <path fill="currentColor"
+                                        d="M532 386.2c27.5-27.1 44-61.1 44-98.2c0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32C93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2c-15.3 30.7-37.3 54.5-37.7 54.9c-6.3 6.7-8.1 16.5-4.4 25c3.6 8.5 12 14 21.2 14c53.5 0 96.7-20.2 125.2-38.8c9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14c3.6-8.5 1.9-18.3-4.4-25c-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4c2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112s-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4l15.5 31.1c2.6 5.1 5.3 10.1 8 14.8c-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1l-19.9 4.6c-16 3.7-32.5 5.6-49 5.6c-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z" />
+                                </svg>
+                                <p>0</p>
+                            </div>
                         </div>
-                        <div class="comments flex align-items-center" style="gap:8px">
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.13em"
-                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512">
-                                <path fill="currentColor"
-                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2c0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32C93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2c-15.3 30.7-37.3 54.5-37.7 54.9c-6.3 6.7-8.1 16.5-4.4 25c3.6 8.5 12 14 21.2 14c53.5 0 96.7-20.2 125.2-38.8c9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14c3.6-8.5 1.9-18.3-4.4-25c-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4c2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112s-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4l15.5 31.1c2.6 5.1 5.3 10.1 8 14.8c-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1l-19.9 4.6c-16 3.7-32.5 5.6-49 5.6c-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z" />
-                            </svg>
-                            <p>0</p>
-                        </div>
+                        <a href="">Who Needs Extract Value From Data?</a>
                     </div>
-                    <h3>Who Needs Extract Value From Data?</h3>
                 </div>
+
 
 
             </div>
@@ -452,11 +472,136 @@
 
     </div>
 
+    <div class="subscribe">
+        <div class="container">
+            <div class="subscribe-content flex align-items-center flexColumn justify-content-center">
+                <h2>Subscribe Newsletters</h2>
+                <p>Enter your email address to register to our newsletter </p>
+                <div class="flex align-items-center">
+                    <input type="text" placeholder="Your Email" />
+                    <button class="primary-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="top-content">
+                <div class="grid-4 container">
+                    <div class="grid-content">
+                        <div class="logo">
+                            <img src="./images/logo-white.png" alt="">
+                        </div>
+                        <div class="flex flexColumn">
+                            <div class="flex align-items-center" style="gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M1.75 1.75c0 8.5 4 12.5 12.5 12.5v-4l-3.5-1l-1 1.5c-2 0-4.5-2.5-4.5-4.5l1.5-1l-1-3.5zm8 0c2.5 0 4.5 2 4.5 4.5m-4.5-2c1 0 2 1 2 2" />
+                                </svg>
+                                <a href="">+91 458 654 528</a>
+                            </div>
+                            <div class="flex align-items-center" style="gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                    <path fill="currentColor"
+                                        d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5l39.3-50.5l42.8 33.3h643.1l42.8-33.3l39.3 50.5l-27.7 21.5zM833.6 232L512 482L190.4 232l-42.8-33.3l-39.3 50.5l27.6 21.5l341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5l-39.3-50.5l-42.7 33.2z" />
+                                </svg>
+                                <a href="">info@example.com</a>
+                            </div>
+                            <div class="flex align-items-center" style="gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="10" r="3" />
+                                        <path
+                                            d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8Z" />
+                                    </g>
+                                </svg>
+                                <p> 60 East 65th Street, NY</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grid-content">
+                        <h4>Use Links</h4>
+                        <div class="links">
+                            <a href="#"> Terms & Conditions</a>
+                            <a href="#"> About Company</a>
+                            <a href="#"> Payment Gateway</a>
+                            <a href="#"> Policy</a>
+                        </div>
+                    </div>
+                    <div class="grid-content">
+                        <h4>Our Services</h4>
+                        <div class="links">
+                            <a href="#"> Data Security</a>
+                            <a href="#"> IT Management</a>
+                            <a href="#"> Outsourcing</a>
+                            <a href="#"> Networking</a>
+                        </div>
+                    </div>
+                    <div class="grid-content">
+                        <h4>Support</h4>
+                        <div class="links">
+                            <a href="#">Documentation</a>
+                            <a href="#"> Support</a>
+                            <a href="#">FAQS</a>
+                            <a href="#">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container bottom-content">
+                <div class="flex align-items-center justify-content-between">
+                    <h6>
+                        © Copyrights 2022 Techmax All rights reserved.
+                    </h6>
+
+                    <div class="social-media flex align-items-center">
+                        <a href="#">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                    <path fill="currentColor"
+                                        d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969ZM2.57 21.83h4V8.799h-4V21.83ZM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.573 2.573 0 0 1-1.82.748a2.59 2.59 0 0 1-1.818-.747A2.548 2.548 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.583 2.583 0 0 1 4.571 2c.682 0 1.336.269 1.819.747c.482.478.753 1.126.753 1.803Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Js/main.js"></script>
     <script>
         $('.slider').slick({
             infinite: true,
@@ -469,28 +614,28 @@
             slidesToShow: 5,
             slidesToScroll: 2,
             responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
                 }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
             ]
         });
     </script>

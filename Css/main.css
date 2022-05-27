@@ -619,24 +619,26 @@ nav {
     grid-gap: 20px;
 }
 
-.blog .grid-3>div .middle-content {
-    margin-top: auto;
-}
-
 .blog .grid-3>div {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    cursor: pointer;
     height: 100%;
-    padding: 2rem;
     border-radius: 12px;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
 
-.blog .grid-content>div:nth-child(1) {
+.blog .grid-content:hover img {
+    transform: scale(1.05);
+}
+
+.blog .grid-content .date {
     width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
     background: var(--bs-linear-gradient);
-    padding: 10px 18px;
+    padding: 16px 20px;
     border-radius: 12px;
     color: var(--bs-primary-white);
 }
@@ -651,9 +653,18 @@ nav {
     text-align: center;
 }
 
-.blog .grid-content h3 {
+.blog .grid-content a {
     color: var(--bs-primary-white);
     font-size: 22px;
+}
+
+.blog .grid-content img {
+    transition: all 0.4s ease-in-out;
+
+}
+
+.blog .grid-content a:hover {
+    color: var(--bs-primary-color);
 }
 
 .blog .grid-content .comments p::after {
@@ -662,22 +673,202 @@ nav {
 
 }
 
+.blog .grid-3 .middle-content>div:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
 .blog .grid-3 .middle-content {
     color: var(--bs-primary-white);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    padding: 2rem;
+}
+
+
+
+.blog .grid-3 svg {
+    color: var(--bs-primary-color);
+}
+
+
+.subscribe-content {
+    position: relative;
+    z-index: 2;
+    background-image: url(../images/subscribe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 115px 50px;
+    border-radius: 10px;
+    margin-bottom: -210px;
+    color: var(--bs-primary-white);
+}
+
+
+.subscribe-content h2 {
+    font-size: 36px;
+}
+
+.subscribe-content p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.subscribe-content input {
+    height: 60px;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    color: #415674;
+    border-radius: 4px 0 0 4px;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    padding: 10px 25px;
+    font-size: 13px;
+    line-height: 30px;
+    width: 40rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.subscribe-content button {
+    height: 60px;
+    background: #005de0;
+    color: #ffffff;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+footer {
+    background: #000c29;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.footer {
+    padding-top: 290px;
+    color: var(--bs-primary-white);
+}
+
+.footer .top-content {
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #1a253f;
+}
+
+.footer .grid-content .links {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .grid-content h4 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.footer .grid-content a,
+.footer .grid-content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c4c5c7;
+    transition: all 0.3s linear;
+}
+
+.footer .grid-content a:hover {
+    color: var(--bs-primary-color);
+
+}
+
+.footer .grid-content svg {
+    color: var(--bs-primary-color);
+}
+
+.footer .grid-content .links a:hover {
+    padding-left: 0.5rem;
+}
+
+.footer .grid-content>div:nth-child(2) {
+    gap: 0.6rem;
+}
+
+.footer .logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+.footer .bottom-content {
+    padding: 2rem 0;
+}
+
+.footer .bottom-content h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c4c5c7;
+}
+
+
+
+.footer .bottom-content .social-media .icon {
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    border-radius: 50%;
+    background: #15203b;
+    margin-right: 12px;
 }
 
-.blog .grid-3>div:nth-child(1) {
-    background-image: url(../images/l-blog-1.jpg);
-
+.footer .bottom-content .social-media .icon svg {
+    height: 24px;
+    width: 24px;
 }
 
-.blog .grid-3>div:nth-child(2) {
-    background-image: url(../images/l-blog-2.jpg);
+
+#progress.active {
+    visibility: visible;
+    transform: translateX(0px);
+    opacity: 1;
+    z-index: 1;
 }
 
-.blog .grid-3>div:nth-child(3) {
-    background-image: url(../images/l-blog-3.jpg);
+#progress {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateX(50px);
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    bottom: 40px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #005de0;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress-value {
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+}
+
+#progress-value svg {
+    height: 18px;
+    color: #005de0;
+    width: 18px;
 }
