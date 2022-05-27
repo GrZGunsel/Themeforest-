@@ -30,3 +30,15 @@ function topFunction() {
 }
 
 window.onscroll = function () { scrollFunction() };
+
+
+
+window.onload = function () {
+    fadein();
+}
+function fadein() {
+    let div = document.querySelector(".fade-in");
+    console.log("sad");
+    div.classList.add("active");
+}
+

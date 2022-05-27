@@ -54,6 +54,7 @@ nav {
     position: absolute;
     display: flex;
     gap: 10px;
+    z-index: -1;
     width: 18rem;
     border-radius: 0.5rem;
     top: 5.1rem;
@@ -756,6 +757,11 @@ footer {
     color: var(--bs-primary-white);
 }
 
+
+.footer .grid-4 {
+    gap: 4rem;
+}
+
 .footer .top-content {
     padding-bottom: 5rem;
     border-bottom: 1px solid #1a253f;
@@ -795,7 +801,7 @@ footer {
 }
 
 .footer .grid-content>div:nth-child(2) {
-    gap: 0.6rem;
+    gap: 1rem;
 }
 
 .footer .logo {
@@ -851,6 +857,7 @@ footer {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    cursor: pointer;
     background: #005de0;
     right: 40px;
     display: flex;

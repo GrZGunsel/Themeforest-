@@ -72,6 +72,7 @@
     background-color: var(--bs-primary-color);
     display: inline-block;
     position: relative;
+    width: fit-content;
     overflow: hidden;
     z-index: 1;
     background-color: #005de0;
