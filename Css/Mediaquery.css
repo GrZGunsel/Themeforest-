@@ -286,6 +286,7 @@
     .container {
         width: 100%;
         padding: 0 16px;
+        overflow-x: hidden;
     }
 
     .footer .grid-4,
@@ -325,8 +326,5 @@
         margin: 0;
     }
 
-    body {
-        width: 100vw;
-        overflow: hidden;
-    }
+
 }
