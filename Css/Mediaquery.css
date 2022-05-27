@@ -283,10 +283,20 @@
 
 
 @media all and (max-width:600px) {
+
+    .hero-section {
+        height: 90vh;
+    }
+
+    .hero-content .rightcontainer .hero-image {
+        height: 40rem;
+    }
+
     .container {
         width: 100%;
         padding: 0 16px;
         overflow-x: hidden;
+        overflow-y: initial;
     }
 
     .footer .grid-4,
@@ -326,5 +336,9 @@
         margin: 0;
     }
 
+    .search {
+        display: none;
+
+    }
 
 }
