@@ -283,9 +283,12 @@
 
 
 @media all and (max-width:600px) {
+    nav a.primaryBtn {
+        display: none;
+    }
 
     .hero-section {
-        height: 90vh;
+        height: 60rem;
     }
 
     .hero-content .rightcontainer .hero-image {
@@ -296,7 +299,7 @@
         width: 100%;
         padding: 0 16px;
         overflow-x: hidden;
-        overflow-y: initial;
+        overflow-y: hidden;
     }
 
     .footer .grid-4,
