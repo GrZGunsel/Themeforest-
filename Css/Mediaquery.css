@@ -34,7 +34,7 @@
 
     .hero-content .rightcontainer .hero-image {
         height: 40rem;
-        right: 2rem;
+
     }
 
     .section-content h2,
@@ -138,8 +138,7 @@
 
     .hero-content .rightcontainer .hero-image {
         height: 35rem;
-        right: 0;
-        bottom: -14rem;
+
     }
 
     .search {
@@ -298,8 +297,7 @@
     .container {
         width: 100%;
         padding: 0 16px;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
     .footer .grid-4,
